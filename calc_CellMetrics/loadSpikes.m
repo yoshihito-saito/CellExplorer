@@ -87,7 +87,8 @@ addParameter(p,'spikes',[],@isstruct); % Load existing spikes structure to appen
 addParameter(p,'LSB',0.195,@isnumeric); % Least significant bit (LSB in uV/bit) Intan = 0.195, Amplipex = 0.3815. (range/precision)
 addParameter(p,'session',[],@isstruct); % A buzsaki lab session struct
 addParameter(p,'labelsToRead',{'good'},@iscell); % allows you to load units with various labels, e.g. MUA or a custom label
-addParameter(p,'showWaveforms',true,@islogical);
+addParameter(p,'showWaveforms',false,@islogical);
+%addParameter(p,'showWaveforms',true,@islogical);
 addParameter(p,'showGUI',false,@islogical);
 
 % Custom spike input
